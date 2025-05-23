@@ -18,19 +18,23 @@ public class SpringDataJpaExApplication {
         Student s2 = context.getBean(Student.class);
         Student s3 = context.getBean(Student.class);
 
-        s1.setRollNo(101);
-        s1.setName("Jhon");
-        s1.setMarks(75);
+//        s1.setRollNo(101);
+//        s1.setName("Jhon");
+//        s1.setMarks(75);
+//
+//        s2.setRollNo(102);
+//        s2.setName("Gustav");
+//        s2.setMarks(76);
+//
+//        s3.setRollNo(103);
+//        s3.setName("Arnold");
+//        s3.setMarks(77);
+//
+//        repo.save(s1);
+//        repo.save(s2);
+//        repo.save(s3);
 
-        s1.setRollNo(102);
-        s1.setName("Gustav");
-        s1.setMarks(76);
-
-        s1.setRollNo(103);
-        s1.setName("Arnold");
-        s1.setMarks(77);
-
-        repo.save(s1);
+        System.out.println(repo.findAll());
     }
 
 }
