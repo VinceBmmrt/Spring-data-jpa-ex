@@ -22,20 +22,18 @@ public class SpringDataJpaExApplication {
 //        s1.setName("Jhon");
 //        s1.setMarks(75);
 //
-//        s2.setRollNo(102);
-//        s2.setName("Gustav");
-//        s2.setMarks(76);
+        s2.setRollNo(102);
+        s2.setName("Gustav");
+        s2.setMarks(52);
 //
 //        s3.setRollNo(103);
 //        s3.setName("Arnold");
 //        s3.setMarks(77);
 //
 //        repo.save(s1);
-//        repo.save(s2);
+        repo.save(s2);
 //        repo.save(s3);
-
-        System.out.println(repo.findByName("Gustav"));
-        System.out.println(repo.findByMarksGreaterThan(70));
+        repo.delete(s2);
 
     }
 
